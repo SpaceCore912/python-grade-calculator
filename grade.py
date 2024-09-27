@@ -5,8 +5,11 @@ def calculator()->int:
     egrade="Enter grade for "
     labs=int(input(enumber + "labs completed: "))
     quizzes=int(input(enumber + "quizzes completed: "))
+    if labs>6:
+        labs=6
+    if quizzes>6:
+        quizzes=6
     lista=[int(input(egrade +"Assignment 1: ")),int(input(egrade+"Assignment 2: ")),int(input(egrade +"Assignment 3: ")),int(input(egrade+"Assignment 4: "))]
-    print(lista)
     
 
     midterm1=int(input(egrade+"Midterm 1: "))
